@@ -1,5 +1,7 @@
 <ion-view view-title="Dictionary">
   <ion-content>
+    <ion-refresher pulling-text="Pull to refresh..." on-refresh="vm.doRefresh()">
+    </ion-refresher>
     <label class="item item-input">
       <i class="icon ion-search placeholder-icon"></i>
       <input type="text" ng-model="wordFilter" placeholder="Search">
