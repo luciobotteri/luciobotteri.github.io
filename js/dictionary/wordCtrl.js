@@ -4,8 +4,8 @@ angular.module('starter.controllers')
         var vm = this;
         vm.parola = DictionaryService.getWord($stateParams.wordSh)
 
-        // vm.swipe = function (direction) {
-        //     if(direction == 'right') 
-        //       $ionicNavBarDelegate.back();
-        //   }
+        vm.swipe = function (direction) {
+            if (direction == 'right') 
+              $ionicNavBarDelegate.back();
+          }
     });
